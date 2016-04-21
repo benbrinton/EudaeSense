@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="homePageImage" type="id" />
+    <item name="Charm" type="id" />
+    <item name="Dandelions" type="id" />
+    <item name="Perspective" type="id" />
+    <item name="Reminder" type="id" />
+    <item name="charmPageImage" type="id" />
+    <item name="Gratitude" type="id" />
+    <item name="gratitudePageImage" type="id" />
+    <item name="Strength" type="id" />
+    <item name="strengthPageImage" type="id" />
+    <item name="forwardPageImage" type="id" />
+    <item name="thanksPageImage" type="id" />
+    <item name="dandelionsPageImage" type="id" />
+    <item name="Blow" type="id" />
+</resources>

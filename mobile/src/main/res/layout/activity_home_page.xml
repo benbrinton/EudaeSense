@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/homePageImage"
+        android:layout_gravity="center"/>
+    <!--android:onClick="register"/>-->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:layout_height="148dp"
+            android:layout_width="match_parent"
+            android:onClick="charm"
+            android:id="@+id/Charm"/>
+
+        <Button
+            android:layout_height="148dp"
+            android:layout_width="match_parent"
+            android:onClick="dandelions"
+            android:id="@+id/Dandelions"
+            android:layout_below="@+id/Charm"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_height="148dp"
+            android:layout_width="match_parent"
+            android:onClick="perspective"
+            android:id="@+id/Perspective"
+            android:layout_below="@+id/Dandelions"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_height="148dp"
+            android:layout_width="match_parent"
+            android:onClick="reminder"
+            android:id="@+id/Reminder"
+            android:layout_below="@+id/Perspective"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</FrameLayout>
