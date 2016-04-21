@@ -13,7 +13,6 @@ import android.widget.ImageView;
 
 public class HomePage extends AppCompatActivity {
     private static final String TAG = "HomePage";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(TAG, "onCreate");
@@ -38,30 +37,6 @@ public class HomePage extends AppCompatActivity {
         Button button4 = (Button)findViewById(R.id.Reminder);
         button4.setBackgroundColor(Color.TRANSPARENT);
         button4.setTextColor(Color.TRANSPARENT);
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        Log.d(TAG, "onCreateOptionsMenu");
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_home_page, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        Log.d(TAG, "onOptionsItemSelected");
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     //On click function

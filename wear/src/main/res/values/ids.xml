@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="oneAImage" type="id" />
+    <item name="oneBImage" type="id" />
+    <item name="twoAImage" type="id" />
+    <item name="twoBImage" type="id" />
+    <item name="twoCImage" type="id" />
+    <item name="twoDImage" type="id" />
+    <item name="threeAImage" type="id" />
+    <item name="threeBImage" type="id" />
+    <item name="threeCImage" type="id" />
+    <item name="threeDImage" type="id" />
+    <item name="fourAImage" type="id" />
+    <item name="fourBImage" type="id" />
+    <item name="action_settings" type="id" />
+</resources>

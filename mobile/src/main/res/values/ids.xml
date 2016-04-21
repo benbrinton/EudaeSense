@@ -14,4 +14,22 @@
     <item name="thanksPageImage" type="id" />
     <item name="dandelionsPageImage" type="id" />
     <item name="Blow" type="id" />
+    <item name="blowPageImage" type="id" />
+    <item name="ratePageImage" type="id" />
+    <item name="thanks2" type="id" />
+    <item name="feedbackThanksPageImage" type="id" />
+    <item name="perspectivePageImage" type="id" />
+    <item name="Thought1" type="id" />
+    <item name="thought1PageImage" type="id" />
+    <item name="Thought2" type="id" />
+    <item name="thought2PageImage" type="id" />
+    <item name="Thought3" type="id" />
+    <item name="thought3PageImage" type="id" />
+    <item name="reminderPageImage" type="id" />
+    <item name="Reminder1" type="id" />
+    <item name="reminder1PageImage" type="id" />
+    <item name="Reminder2" type="id" />
+    <item name="reminder2PageImage" type="id" />
+    <item name="feedback" type="id" />
+    <item name="feedbackPageImage" type="id" />
 </resources>

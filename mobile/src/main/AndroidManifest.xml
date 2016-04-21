@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".HomePage"
+            android:name=".SplashScreenPage"
             android:screenOrientation="portrait">
             <!--android:label="@string/app_name"-->
             <!--android:theme="@style/AppTheme.NoActionBar">-->
@@ -19,6 +19,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".HomePage"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="edu.akester.eudaesense.HomePage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".CharmPage"
             android:screenOrientation="portrait"/>
@@ -40,6 +50,34 @@
         <activity
             android:name=".BlowPage"
             android:screenOrientation="portrait"/>
+        <activity
+            android:name=".FeedbackPage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".RatePage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ThoughtOnePage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ThoughtTwoPage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ThoughtThreePage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".PerspectivePage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ReminderPage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ReminderOnePage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ReminderTwoPage"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>

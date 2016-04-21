@@ -10,8 +10,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@android:style/Theme.DeviceDefault">
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".OneA"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,6 +22,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".OneB"/>
+        <activity android:name=".TwoA"/>
+        <activity android:name=".TwoB"/>
+        <activity android:name=".TwoC"/>
+        <activity android:name=".TwoD"/>
+        <activity android:name=".ThreeA"/>
+        <activity android:name=".ThreeB"/>
+        <activity android:name=".ThreeC"/>
+        <activity android:name=".ThreeD"/>
+        <activity android:name=".FourA"/>
+        <activity android:name=".FourB"/>
+
+
     </application>
 
 </manifest>
