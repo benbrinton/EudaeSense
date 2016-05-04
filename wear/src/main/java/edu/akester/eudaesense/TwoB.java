@@ -69,7 +69,14 @@ public class TwoB extends Activity {
     //On click function
     public void reminder(View view) {
         Log.d(TAG, "reminder");
-        Intent intent = new Intent(this, TwoB2.class);
+        Intent intent = new Intent(this, TwoC.class);
         startActivity(intent);
+    }
+
+    @Override
+    protected void onPause() {
+        Log.d(TAG, "onPause");
+        super.onPause();
+        finish();
     }
 }

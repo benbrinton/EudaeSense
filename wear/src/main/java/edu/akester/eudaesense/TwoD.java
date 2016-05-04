@@ -39,7 +39,7 @@ public class TwoD extends Activity {
                     // Left to Right swipe action
                     if (x2 < x1)
                     {
-                        Intent intent = new Intent(this, MenuScreen.class); //Change to add another
+                        Intent intent = new Intent(this, MenuScreen.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
                     }
@@ -55,6 +55,13 @@ public class TwoD extends Activity {
                 break;
         }
         return super.onTouchEvent(event);
+    }
+
+    @Override
+    protected void onPause() {
+        Log.d(TAG, "onPause");
+        super.onPause();
+        finish();
     }
 
 }

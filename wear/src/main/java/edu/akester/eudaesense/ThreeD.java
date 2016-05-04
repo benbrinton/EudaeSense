@@ -58,4 +58,11 @@ public class ThreeD extends Activity {
         }
         return super.onTouchEvent(event);
     }
+
+    @Override
+    protected void onPause() {
+        Log.d(TAG, "onPause");
+        super.onPause();
+        finish();
+    }
 }

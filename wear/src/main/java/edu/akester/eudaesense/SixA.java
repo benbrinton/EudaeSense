@@ -8,8 +8,8 @@ import android.view.MotionEvent;
 import android.widget.ImageView;
 
 
-public class ThreeA extends Activity {
-    private static final String TAG = "ThreeA";
+public class SixA extends Activity {
+    private static final String TAG = "SixA";
     private float x1,x2;
     static final int MIN_DISTANCE = 5;
 
@@ -17,11 +17,12 @@ public class ThreeA extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(TAG, "onCreate");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_three_a);
+        setContentView(R.layout.activity_two_a);
 
-        ImageView iv = (ImageView) findViewById(R.id.threeAImage);
-        iv.setImageResource(R.drawable.intervention3a);
+        ImageView iv = (ImageView) findViewById(R.id.twoAImage);
+        iv.setImageResource(R.drawable.intervention6a);
     }
+
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
@@ -40,7 +41,7 @@ public class ThreeA extends Activity {
                     // Left to Right swipe action
                     if (x2 < x1)
                     {
-                        Intent intent = new Intent(this, ThreeB.class);
+                        Intent intent = new Intent(this, SixB.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
                     }
@@ -48,7 +49,7 @@ public class ThreeA extends Activity {
                     // Right to left swipe action
                     else
                     {
-                        Intent intent = new Intent(this, MenuScreen.class);
+                        Intent intent = new Intent(this, Demo.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
                     }
@@ -64,5 +65,4 @@ public class ThreeA extends Activity {
         super.onPause();
         finish();
     }
-
 }

@@ -105,7 +105,7 @@ public class Demo extends Activity {
     //On click function
     public void fourA(View view) {
         Log.d(TAG, "fourA");
-        Intent intent = new Intent(this, MenuScreen.class);
+        Intent intent = new Intent(this, SixA.class);
         startActivity(intent);
     }
 
@@ -114,6 +114,13 @@ public class Demo extends Activity {
         Log.d(TAG, "fiveA");
         Intent intent = new Intent(this, RandomA.class);
         startActivity(intent);
+    }
+
+    @Override
+    protected void onPause() {
+        Log.d(TAG, "onPause");
+        super.onPause();
+        finish();
     }
 
 }

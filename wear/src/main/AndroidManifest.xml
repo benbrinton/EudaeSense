@@ -34,7 +34,6 @@
         <activity android:name=".OneB"/>
         <activity android:name=".TwoA"/>
         <activity android:name=".TwoB"/>
-        <activity android:name=".TwoB2"/>
         <activity android:name=".TwoC"/>
         <activity android:name=".TwoD"/>
         <activity android:name=".ThreeA"/>
@@ -50,6 +49,8 @@
         <activity android:name=".Demo"/>
         <activity android:name=".RandomA"/>
         <activity android:name=".RandomB"/>
+        <activity android:name=".SixA"/>
+        <activity android:name=".SixB"/>
 
     </application>
 

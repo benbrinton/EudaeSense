@@ -78,4 +78,11 @@ public class MenuScreen extends Activity {
         startActivity(intent);
     }
 
+    @Override
+    protected void onPause() {
+        Log.d(TAG, "onPause");
+        super.onPause();
+        finish();
+    }
+
 }

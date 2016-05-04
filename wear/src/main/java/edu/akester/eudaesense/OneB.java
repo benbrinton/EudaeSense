@@ -49,7 +49,7 @@ public class OneB extends Activity {
                     // Right to left swipe action
                     else
                     {
-                        Intent intent = new Intent(this, OneB.class);
+                        Intent intent = new Intent(this, OneA.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent);
                     }
@@ -57,5 +57,12 @@ public class OneB extends Activity {
                 break;
         }
         return super.onTouchEvent(event);
+    }
+
+    @Override
+    protected void onPause() {
+        Log.d(TAG, "onPause");
+        super.onPause();
+        finish();
     }
 }
