@@ -15,57 +15,53 @@ import android.widget.Toast;
 
 
 public class OneA extends Activity {
-    private static final String DEBUG_TAG = "OneA";
-    private GestureDetectorCompat gestureDetectorCompat;
+    private static final String TAG = "OneA";
+    private float x1,x2;
+    static final int MIN_DISTANCE = 5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Log.d(TAG, "onCreate");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_one_a);
+        setContentView(R.layout.activity_two_a);
 
-        ImageView iv = (ImageView) findViewById(R.id.oneAImage);
+        ImageView iv = (ImageView) findViewById(R.id.twoAImage);
         iv.setImageResource(R.drawable.intervention1a);
-
-        gestureDetectorCompat = new GestureDetectorCompat(this, new MyGestureListener());
     }
+
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        this.gestureDetectorCompat.onTouchEvent(event);
+        Log.d(TAG, "onTouchEvent");
+        switch(event.getAction())
+        {
+            case MotionEvent.ACTION_DOWN:
+                x1 = event.getX();
+                break;
+            case MotionEvent.ACTION_UP:
+                x2 = event.getX();
+                float deltaX = x2 - x1;
+
+                if (Math.abs(deltaX) > MIN_DISTANCE)
+                {
+                    // Left to Right swipe action
+                    if (x2 < x1)
+                    {
+                        Intent intent = new Intent(this, OneB.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
+                    }
+
+                    // Right to left swipe action
+                    else
+                    {
+                        Intent intent = new Intent(this, Demo.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent);
+                    }
+                }
+                break;
+        }
         return super.onTouchEvent(event);
     }
-
-    class MyGestureListener extends GestureDetector.SimpleOnGestureListener {
-        //handle 'swipe left' action only
-
-        @Override
-        public boolean onFling(MotionEvent event1, MotionEvent event2,
-                               float velocityX, float velocityY) {
-
-         /*
-         Toast.makeText(getBaseContext(),
-          event1.toString() + "\n\n" +event2.toString(),
-          Toast.LENGTH_SHORT).show();
-         */
-
-            if(event2.getX() < event1.getX()){
-                Toast.makeText(getBaseContext(),
-                        "Swipe left - startActivity()",
-                        Toast.LENGTH_SHORT).show();
-
-                //switch another activity
-                Intent intent = new Intent(
-                        OneA.this, OneB.class);
-                startActivity(intent);
-            }
-
-            return true;
-        }
-    }
-
-
-
-
-
-
 }

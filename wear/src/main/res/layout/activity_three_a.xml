@@ -7,6 +7,5 @@
         android:layout_height="match_parent"
         android:id="@+id/threeAImage"
         android:layout_gravity="center"        />
-    <!--android:onClick="backToHome"-->
 
 </FrameLayout>

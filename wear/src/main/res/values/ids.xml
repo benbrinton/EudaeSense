@@ -13,4 +13,6 @@
     <item name="fourAImage" type="id" />
     <item name="fourBImage" type="id" />
     <item name="action_settings" type="id" />
+    <item name="splashImage" type="id" />
+    <item name="menuImage" type="id" />
 </resources>
