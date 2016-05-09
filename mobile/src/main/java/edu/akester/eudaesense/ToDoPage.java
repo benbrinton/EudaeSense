@@ -9,28 +9,26 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-
-public class ToDoOnePage extends AppCompatActivity {
-    private static final String TAG = "ToDoOnePage";
+public class ToDoPage extends AppCompatActivity {
+    private static final String TAG = "ToDoPage";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(TAG, "onCreate");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_todo_page);
+        setContentView(R.layout.activity_start_pages);
 
-        ImageView iv = (ImageView) findViewById(R.id.staticImage);
-        iv.setImageResource(R.drawable.todo2);
+        ImageView iv = (ImageView) findViewById(R.id.dandelionsPageImage);
+        iv.setImageResource(R.drawable.todo1);
 
-        Button button1 = (Button)findViewById(R.id.Next);
+        Button button1 = (Button)findViewById(R.id.Blow);
         button1.setBackgroundColor(Color.TRANSPARENT);
         button1.setTextColor(Color.TRANSPARENT);
     }
 
     //On click function
-    public void next(View view) {
-        Log.d(TAG, "next");
-        Intent intent = new Intent(this, ToDoTwoPage.class);
+    public void blow(View view) {
+        Log.d(TAG, "blow");
+        Intent intent = new Intent(this, ToDoOnePage.class);
         startActivity(intent);
     }
 }
-

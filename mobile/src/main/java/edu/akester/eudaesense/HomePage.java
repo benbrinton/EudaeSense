@@ -5,8 +5,6 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -17,7 +15,7 @@ public class HomePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(TAG, "onCreate");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_page);
+        setContentView(R.layout.activity_menu_page);
 
         ImageView iv = (ImageView)findViewById(R.id.homePageImage);
         iv.setImageResource(R.drawable.homescreen);
@@ -37,6 +35,10 @@ public class HomePage extends AppCompatActivity {
         Button button4 = (Button)findViewById(R.id.Reminder);
         button4.setBackgroundColor(Color.TRANSPARENT);
         button4.setTextColor(Color.TRANSPARENT);
+
+        Button button5 = (Button)findViewById(R.id.ToDo);
+        button5.setBackgroundColor(Color.TRANSPARENT);
+        button5.setTextColor(Color.TRANSPARENT);
     }
 
     //On click function
@@ -62,8 +64,15 @@ public class HomePage extends AppCompatActivity {
 
     //On click function
     public void reminder(View view) {
-        Log.d(TAG, "perspective");
+        Log.d(TAG, "reminder");
         Intent intent = new Intent(this, ReminderPage.class);
+        startActivity(intent);
+    }
+
+    //On click function
+    public void todo(View view) {
+        Log.d(TAG, "todo");
+        Intent intent = new Intent(this, ToDoPage.class);
         startActivity(intent);
     }
 

@@ -9,8 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-
-public class ToDoOnePage extends AppCompatActivity {
+public class ToDoThreePage extends AppCompatActivity {
     private static final String TAG = "ToDoOnePage";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +18,7 @@ public class ToDoOnePage extends AppCompatActivity {
         setContentView(R.layout.activity_todo_page);
 
         ImageView iv = (ImageView) findViewById(R.id.staticImage);
-        iv.setImageResource(R.drawable.todo2);
+        iv.setImageResource(R.drawable.todo4);
 
         Button button1 = (Button)findViewById(R.id.Next);
         button1.setBackgroundColor(Color.TRANSPARENT);
@@ -33,4 +32,3 @@ public class ToDoOnePage extends AppCompatActivity {
         startActivity(intent);
     }
 }
-

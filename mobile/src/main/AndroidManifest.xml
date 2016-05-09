@@ -78,10 +78,16 @@
             android:name=".ReminderTwoPage"
             android:screenOrientation="portrait"/>
         <activity
+            android:name=".ToDoPage"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".ToDoOnePage"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".ToDoTwoPage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".ToDoThreePage"
             android:screenOrientation="portrait"/>
 
     </application>

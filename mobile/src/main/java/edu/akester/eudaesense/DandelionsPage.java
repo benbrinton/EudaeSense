@@ -16,7 +16,7 @@ public class DandelionsPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         Log.d(TAG, "onCreate");
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dandelions_page);
+        setContentView(R.layout.activity_start_pages);
 
         ImageView iv = (ImageView) findViewById(R.id.dandelionsPageImage);
         iv.setImageResource(R.drawable.dandelions1);
