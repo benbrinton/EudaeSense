@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+    android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:textAllCaps="false">
 
     <!--<ImageView-->
         <!--android:layout_width="match_parent"-->
@@ -22,13 +22,32 @@
         <!--android:layout_gravity="bottom" />-->
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:text="Back to Menu"
         android:id="@+id/Back"
         android:onClick="back"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="52dp" />
+        android:layout_marginBottom="50dp"
+        android:textSize="17dp"
+        android:shadowDy="1"
+        android:shadowRadius="3"
+        android:shadowColor="@android:color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Leave your worry with the dandelion and blow it away"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:textSize="18dp"
+        android:layout_marginTop="50dp"
+        android:color="#232323"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:maxWidth="250dp" />
 
 </RelativeLayout>

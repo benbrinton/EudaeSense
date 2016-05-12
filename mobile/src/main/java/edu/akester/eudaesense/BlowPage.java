@@ -4,6 +4,7 @@ package edu.akester.eudaesense;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.PowerManager;
@@ -84,9 +85,18 @@ public class BlowPage extends AppCompatActivity {
         mGifView = (GIFView) findViewById(R.id.GIFView);
         //mGifView.startGif();
 
+        TextView txt1 = (TextView) findViewById(R.id.Back);
+        Typeface font1 = Typeface.createFromAsset(getAssets(), "Avenir-Medium.ttf");
+        txt1.setTypeface(font1);
+
+        TextView txt2 = (TextView) findViewById(R.id.textView);
+        Typeface font2 = Typeface.createFromAsset(getAssets(), "Avenir-Medium.ttf");
+        txt2.setTypeface(font2);
+
         Button button1 = (Button) findViewById(R.id.Back);
-        button1.setBackgroundColor(Color.BLUE);
+        button1.setBackgroundColor(Color.parseColor("#2D8EE1"));
         button1.setTextColor(Color.WHITE);
+        button1.setTransformationMethod(null);
 
         // Used to record voice
         mSensor = new SoundMeter();
