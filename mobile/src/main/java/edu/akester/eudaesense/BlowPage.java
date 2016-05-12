@@ -13,7 +13,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class BlowPage extends AppCompatActivity {
     private static final String TAG = "BlowPage";
@@ -178,8 +177,8 @@ public class BlowPage extends AppCompatActivity {
 
     private void callForHelp() {
         // Show alert when noise threshold crossed
-        Toast.makeText(getApplicationContext(), "Noise Threshold crossed, do here your stuff.",
-                Toast.LENGTH_LONG).show();
+//        Toast.makeText(getApplicationContext(), "Noise Threshold crossed, do here your stuff.",
+//                Toast.LENGTH_LONG).show();
 
         mGifView.startGif();
     }
